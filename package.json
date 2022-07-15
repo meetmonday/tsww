@@ -1,6 +1,6 @@
 {
-  "name": "tiktok-scraper-without-watermark",
-  "version": "1.1.2",
+  "name": "tsww",
+  "version": "2",
   "description": "Tiktok Scraper, Download Video From Tiktok Without Watermark.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MRHRTZ/Tiktok-Scraper-Without-Watermark.git"
+    "url": "git+https://github.com/meetmonday/tsww.git"
   },
   "keywords": [
     "Tiktok Downloader",
@@ -23,9 +23,7 @@
   },
   "homepage": "https://github.com/MRHRTZ/Tiktok-Scraper-Without-Watermark#readme",
   "dependencies": {
-    "axios": "^0.21.1",
-    "cheerio": "^1.0.0-rc.6",
-    "form-data": "^4.0.0",
-    "qs": "^6.10.1"
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.6"
   }
 }
