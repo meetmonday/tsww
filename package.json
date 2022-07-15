@@ -1,15 +1,12 @@
 {
-  "name": "tsww",
-  "version": "2",
+  "name": "@meetmonday/tsww",
+  "version": "1.2.0",
   "description": "Tiktok Scraper, Download Video From Tiktok Without Watermark.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/meetmonday/tsww.git"
-  },
+  "repository": "git://github.com/meetmonday/tsww.git",
   "keywords": [
     "Tiktok Downloader",
     "Tiktok Scraper",
@@ -25,5 +22,8 @@
   "dependencies": {
     "axios": "^0.27.2",
     "cheerio": "^1.0.0-rc.6"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
   }
 }
