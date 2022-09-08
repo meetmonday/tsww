@@ -3,9 +3,6 @@
   "version": "1.2.1",
   "description": "Tiktok Scraper, Download Video From Tiktok Without Watermark.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": "git://github.com/meetmonday/tsww.git",
   "keywords": [
     "Tiktok Downloader",
@@ -24,6 +21,6 @@
     "cheerio": "^1.0.0-rc.6"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   }
 }
