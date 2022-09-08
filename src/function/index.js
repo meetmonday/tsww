@@ -5,12 +5,12 @@ function tiktokdownload(url) {
   return new Promise((resolve, reject) => {
     axios.get('https://ttdownloader.com/')
       .then((data) => {
-        const $ = cheerio.load(data.data)
-        axios.post('https://ttdownloader.com/query/', `url=${url}&token=${$('#token').attr('value')}`, {
+        const token = [...data.data.matchAll(/<input .* name="token" value="(.*)"\/>/gm)][0][1];
+        axios.post('https://ttdownloader.com/search/', `url=${url}&token=${token}`, {
           headers: {
             'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
             origin: 'https://ttdownloader.com',
-            referer: 'https://ttdownloader.com/',
+            referer: 'https://ttdownloader.com/', 
             cookie: data.headers['set-cookie'].join(''),
           }
         }
